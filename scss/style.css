@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+:root {
+  --successProgress: 50%;
+  --dangerProgress: 50%;
+  --defaultProgress: 50%;
+  --primaryProgress: 50%;
+  --warningProgress: 50%; }
+
+body {
+  background-color: var(--bg);
+  font: normal 14px/1.4 Roboto; }
+
+.main {
+  max-width: 800px;
+  margin: 50px auto; }
+
+.panel {
+  padding: 50px;
+  background-color: #f7f7f7; }
+  .panel .wrap {
+    padding-bottom: 40px; }
+
+.meter {
+  box-sizing: content-box;
+  height: 38px;
+  position: relative;
+  margin: 60px 0 20px 0;
+  background: #ebebeb;
+  border-radius: 25px; }
+  .meter > span {
+    display: block;
+    height: calc(100% - 4px);
+    border-radius: 35px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #bfbfbf;
+    background-color: #fefefe;
+    background: linear-gradient(to bottom, #fefefe 0%, #fefefe 100%);
+    transition: all 0.5s ease;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Roboto";
+    text-align: right;
+    padding: 2px 14px;
+    box-sizing: border-box;
+    color: #666666;
+    text-shadow: 0 2px 1px rgba(255, 255, 255, 0.5); }
+    .meter > span::after,
+    .meter > span > span {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      overflow: hidden; }
+  .meter.green > span {
+    box-shadow: inset 0 2px 0px rgba(255, 255, 255, 0.2), inset 0 -2px 6px rgba(0, 0, 0, 0.2), 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    background-color: #9fd657;
+    border-color: #5e8b22;
+    background: linear-gradient(to bottom, #ceeaa9 0%, #9fd657 100%); }
+    .meter.green > span::after,
+    .meter.green > span > span {
+      background-size: auto auto;
+      background-image: repeating-linear-gradient(135deg, transparent, transparent 6px, rgba(148, 71, 71, 0.1) 6px, rgba(148, 71, 71, 0.1) 12px);
+      z-index: 1; }
+  .meter.red > span {
+    box-shadow: inset 0 2px 0px rgba(255, 255, 255, 0.2), inset 0 -2px 6px rgba(0, 0, 0, 0.2), 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    background-color: #ef6052;
+    border-color: #b11f10;
+    background: linear-gradient(to bottom, #f8b6af 0%, #ef6052 100%); }
+    .meter.red > span::after,
+    .meter.red > span > span {
+      background-size: auto auto;
+      background-image: repeating-linear-gradient(135deg, transparent, transparent 6px, rgba(148, 71, 71, 0.1) 6px, rgba(148, 71, 71, 0.1) 12px);
+      z-index: 1; }
+  .meter.white > span {
+    box-shadow: inset 0 2px 0px rgba(255, 255, 255, 0.2), inset 0 -2px 6px rgba(0, 0, 0, 0.2), 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    background-color: #fefefe;
+    border-color: #bebebe;
+    background: linear-gradient(to bottom, white 0%, #fefefe 100%); }
+    .meter.white > span::after,
+    .meter.white > span > span {
+      background-size: auto auto;
+      background-image: repeating-linear-gradient(135deg, transparent, transparent 6px, rgba(148, 71, 71, 0.1) 6px, rgba(148, 71, 71, 0.1) 12px);
+      z-index: 1; }
+  .meter.blue > span {
+    box-shadow: inset 0 2px 0px rgba(255, 255, 255, 0.2), inset 0 -2px 6px rgba(0, 0, 0, 0.2), 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    background-color: #60aede;
+    border-color: #216e9e;
+    background: linear-gradient(to bottom, #b4d9f0 0%, #60aede 100%); }
+    .meter.blue > span::after,
+    .meter.blue > span > span {
+      background-size: auto auto;
+      background-image: repeating-linear-gradient(135deg, transparent, transparent 6px, rgba(148, 71, 71, 0.1) 6px, rgba(148, 71, 71, 0.1) 12px);
+      z-index: 1; }
+  .meter.yellow > span {
+    box-shadow: inset 0 2px 0px rgba(255, 255, 255, 0.2), inset 0 -2px 6px rgba(0, 0, 0, 0.2), 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    background-color: #f2b739;
+    border-color: #a1710b;
+    background: linear-gradient(to bottom, #f8da99 0%, #f2b739 100%); }
+    .meter.yellow > span::after,
+    .meter.yellow > span > span {
+      background-size: auto auto;
+      background-image: repeating-linear-gradient(135deg, transparent, transparent 6px, rgba(148, 71, 71, 0.1) 6px, rgba(148, 71, 71, 0.1) 12px);
+      z-index: 1; }
+
+.btn {
+  padding: 8px 35px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px; }
+  .btn-primary {
+    background-color: #FF2A5D;
+    color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
